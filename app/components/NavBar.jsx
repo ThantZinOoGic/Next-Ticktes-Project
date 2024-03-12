@@ -6,13 +6,15 @@ import Image from 'next/image';
 export default function NavBar() {
   return (
     <nav>
-      <Image
-        src={logo}
-        alt="Dojo logo Image"
-        width={70}
-        quality={100}
-        placeholder='blur'/>
-        <h6>Dojo</h6>
+        <Link href={'/'}>
+          <Image
+          src={logo}
+          alt="Dojo logo Image"
+          width={70}
+          quality={100}
+          placeholder='blur'/>
+        </Link>
+        <Link href={'/'}><h6>Dojo</h6></Link>
         <Link href={'/'}>Dashboard</Link>
         <Link href={'/tickets'}>Ticktes</Link>
     </nav>
